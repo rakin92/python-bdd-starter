@@ -1,0 +1,23 @@
+
+    
+language: python
+sudo: false
+dist: xenial   # required for Python >= 3.7
+python:
+  - "3.7"
+  - "2.7"
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+
+install:
+  - travis_retry pip3 install -r requirements.txt
+
+script:
+  - python --version
+  - behave -f progress --junit features/
+
+after_failure:
+  - echo "FAILURE DETAILS (from XML reports):"
+  - bin/behave.junit_filter.py --status=failed reports
