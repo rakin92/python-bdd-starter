@@ -7,6 +7,9 @@ python:
   - "3.7"
   - "2.7"
 
+env:
+  global:
+    - RUN_HEADLESS=TRUE
 cache:
   directories:
     - $HOME/.cache/pip
