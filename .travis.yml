@@ -10,10 +10,6 @@ before_script:
   - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.7.1/bin/
   - export CHROME_BIN=chromium-browser
 
-env:
-  global:
-    - RUN_HEADLESS=TRUE
-
 addons:
   chrome: stable
 

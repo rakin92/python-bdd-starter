@@ -33,8 +33,7 @@ def __make_local_browser(name):
     options.set_headless(headless=is_hedless)
     options.add_argument('--no-sandbox')
 
-    # TODO: Fix options issue
-    return webdriver.Chrome()
+    return webdriver.Chrome(options=options)
 
 
 def make_browser(name):
