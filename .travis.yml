@@ -16,7 +16,7 @@ install:
 
 script:
   - python --version
-  - behave -f progress --junit features/
+  - behave
 
 after_failure:
   - echo "FAILURE DETAILS (from XML reports):"

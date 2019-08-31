@@ -1,5 +1,6 @@
 ## Python Behavior Driven Testing
 [![Build Status](https://travis-ci.org/rakin92/python-bdd-starter.svg?branch=master)](https://travis-ci.org/rakin92/python-bdd-starter)
+[![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)](https://www.python.org/downloads/release/python-370/)
 
 "*In software engineering, behavior-driven development is an Agile software development process that encourages collaboration among developers, QA and non-technical or business participants in a software project.*" - Wiki
 
