@@ -53,3 +53,17 @@ Python follow the [PEP 8](https://www.python.org/dev/peps/pep-0008/) standard, T
 ```
 autopep8 --in-place --aggressive --aggressive <file_path>
 ```
+
+### Docker
+
+Build image
+
+```
+docker build -t IMAGE_NAME .
+```
+
+Run image
+
+```
+docker run IMAGE_NAME
+```
