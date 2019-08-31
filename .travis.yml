@@ -10,6 +10,10 @@ python:
 env:
   global:
     - RUN_HEADLESS=TRUE
+
+addons:
+  chrome: stable
+
 cache:
   directories:
     - $HOME/.cache/pip
